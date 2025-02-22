@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: lightcyan;
+  box-sizing: border-box;
+}
+.conatainer {
+  margin: 150px auto;
+  width: 50%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+  height: 280px;
+}
+.inputContainer input {
+  width: 100%;
+  outline: none;
+  padding: 10px;
+  text-align: end;
+  background-color: #fe0709;
+  color: whitesmoke;
+  height: 50px;
+  border-bottom: 1px solid #fe0709;
+}
+
+.tableContainer table td {
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #ecedef;
+  text-align: center;
+  cursor: pointer;
+  padding: 8px;
+  transition: all ease 0.7;
+  font-weight: 700;
+}
+.tableContainer table {
+  width: 100%;
+  border-spacing: 10px;
+}
+
+.tableContainer table td:hover {
+  scale: 1.1;
+  background-color: gray;
+}
+.opt {
+  background-color: rgb(71, 71, 159) !important;
+  color: whitesmoke;
+}
+
+.opt:hover {
+  background-color: aqua !important;
+  color: black;
+}
+.equals {
+  background-color: green !important;
+  color: whitesmoke;
+}
+.equals:hover {
+  background-color: rgb(112, 237, 112) !important;
+}
+.AC {
+  background-color: rgb(248, 248, 86) !important;
+  color: black;
+}
+.AC:hover {
+  background-color: rgb(192, 192, 17) !important;
+}
+.DEL {
+  background-color: chartreuse !important;
+}
+.DEL:hover {
+  background-color: orchid !important;
+}
