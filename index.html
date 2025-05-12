@@ -7,41 +7,42 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="conatainer">
+    <div class="Container">
       <div class="inputContainer">
-        <input type="text" id="input" placeholder="Number..." disabled />
+        <input type="text" disabled placeholder="Number..." id="input" />
       </div>
       <div class="tableContainer">
         <table>
           <tr>
-            <td colspan="2" class="AC" onclick="allClear()">AC</td>
-            <td class="DEL" onclick="delValue()">DEL</td>
-            <td class="opt" onclick="getValue('+')">+</td>
-          </tr>
-
-          <tr>
-            <td onclick="getValue(9)">9</td>
-            <td onclick="getValue(8)">8</td>
-            <td onclick="getValue(7)">7</td>
-            <td class="opt" onclick="getValue('-')">-</td>
+            <td class="deletebtn clearAll" onclick="clearAll()" colspan="2">
+              Clear All
+            </td>
+            <td class="deletebtn" onclick="delValue()">Delete</td>
+            <td class="operatorBtn" onclick="getValue('+')">+</td>
           </tr>
           <tr>
-            <td onclick="getValue(6)">6</td>
-            <td onclick="getValue(5)">5</td>
-            <td onclick="getValue(4)">4</td>
-            <td class="opt" onclick="getValue('*')">*</td>
+            <td class="numberBtn" onclick="getValue(9)">9</td>
+            <td class="numberBtn" onclick="getValue(8)">8</td>
+            <td class="numberBtn" onclick="getValue(7)">7</td>
+            <td class="operatorBtn" onclick="getValue('-')">-</td>
           </tr>
           <tr>
-            <td onclick="getValue(3)">3</td>
-            <td onclick="getValue(2)">2</td>
-            <td onclick="getValue(1)">1</td>
-            <td class="opt" onclick="getValue('/')">/</td>
+            <td class="numberBtn" onclick="getValue(6)">6</td>
+            <td class="numberBtn" onclick="getValue(5)">5</td>
+            <td class="numberBtn" onclick="getValue(4)">4</td>
+            <td class="operatorBtn" onclick="getValue('*')">x</td>
           </tr>
           <tr>
-            <td onclick="getValue(0)">0</td>
-            <td onclick="getValue('00')">00</td>
-            <td onclick="getValue('.')">.</td>
-            <td class="equals" onclick="equalTo()">=</td>
+            <td class="numberBtn" onclick="getValue(3)">3</td>
+            <td class="numberBtn" onclick="getValue(2)">2</td>
+            <td class="numberBtn" onclick="getValue(1)">1</td>
+            <td class="operatorBtn" onclick="getValue('/')">/</td>
+          </tr>
+          <tr>
+            <td class="numberBtn" onclick="getValue(0)">0</td>
+            <td class="numberBtn" onclick="getValue('00')">00</td>
+            <td class="numberBtn" onclick="getValue('.')">.</td>
+            <td class="operatorBtn" onclick="equalTo('=')">=</td>
           </tr>
         </table>
       </div>

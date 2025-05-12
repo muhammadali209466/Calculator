@@ -1,73 +1,69 @@
 * {
-  margin: 0;
   padding: 0;
-  background-color: lightcyan;
+  margin: 0;
   box-sizing: border-box;
 }
-.conatainer {
-  margin: 150px auto;
-  width: 50%;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background-color: white;
-  height: 280px;
+.Container {
+  background-color: #000000;
+  width: 40%;
+  margin: 40px auto;
+  border: #000000 solid 1px;
+}
+.inputContainer {
+  background-color: #000000;
 }
 .inputContainer input {
+  background-color: #000000;
+  border: solid 1px #000000;
+  color: white;
   width: 100%;
-  outline: none;
   padding: 10px;
-  text-align: end;
-  background-color: #fe0709;
-  color: whitesmoke;
   height: 50px;
-  border-bottom: 1px solid #fe0709;
-}
-
-.tableContainer table td {
-  border-radius: 5px;
-  outline: none;
-  border: none;
-  background-color: #ecedef;
-  text-align: center;
-  cursor: pointer;
-  padding: 8px;
-  transition: all ease 0.7;
-  font-weight: 700;
+  text-align: right;
 }
 .tableContainer table {
-  width: 100%;
-  border-spacing: 10px;
+  width: auto;
+  margin: 0 auto;
+  border-spacing: 25px;
+  table-layout: fixed;
+}
+.tableContainer table td {
+  border-radius: 50%;
+  border: solid 1px #000000;
+  width: 60px;
+  text-align: center;
+  height: 60px;
+  font-size: 20px;
+  cursor: pointer;
+  vertical-align: middle;
+  color: white;
+  transition: all ease 0.6s;
+}
+.deletebtn {
+  background-color: #a5a5a5 !important;
+  color: #000000 !important;
+}
+.numberBtn {
+  color: #ffffff !important;
+  background-color: #333333 !important;
+}
+.operatorBtn {
+  color: #ffffff !important;
+  background-color: #fe9505 !important;
+}
+.clearAll {
+  border-radius: 9px !important;
 }
 
-.tableContainer table td:hover {
-  scale: 1.1;
-  background-color: gray;
+.deletebtn:hover {
+  background-color: #ffffff !important;
+  color: #000000 !important;
 }
-.opt {
-  background-color: rgb(71, 71, 159) !important;
-  color: whitesmoke;
+.numberBtn:hover {
+  color: #ffffff !important;
+  background-color: #514949 !important;
 }
-
-.opt:hover {
-  background-color: aqua !important;
-  color: black;
-}
-.equals {
-  background-color: green !important;
-  color: whitesmoke;
-}
-.equals:hover {
-  background-color: rgb(112, 237, 112) !important;
-}
-.AC {
-  background-color: rgb(248, 248, 86) !important;
-  color: black;
-}
-.AC:hover {
-  background-color: rgb(192, 192, 17) !important;
-}
-.DEL {
-  background-color: chartreuse !important;
-}
-.DEL:hover {
-  background-color: orchid !important;
+.operatorBtn:hover {
+  color: #ffffff !important;
+  background-color: #a76304 !important;
 }
