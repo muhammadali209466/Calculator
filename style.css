@@ -20,6 +20,7 @@
   padding: 10px;
   height: 50px;
   text-align: right;
+  font-size: 34px;
 }
 .tableContainer table {
   width: auto;
@@ -66,4 +67,32 @@
 .operatorBtn:hover {
   color: #ffffff !important;
   background-color: #a76304 !important;
+}
+
+@media screen and (min-width: 600px) and (max-width: 790px) {
+  .tableContainer {
+    width: 100%;
+  }
+  .Container {
+    width: 65%;
+  }
+  .inputContainer input {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .tableContainer {
+    width: 100%;
+  }
+  .Container {
+    width: 80%;
+  }
+  .inputContainer input {
+    font-size: 24px;
+  }
+  .tableContainer table td {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
 }
